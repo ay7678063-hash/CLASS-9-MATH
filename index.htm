@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Math Master — Class 9 (Complete Syllabus)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-colorful">
+  <div class="container">
+    <header class="header" role="banner">
+      <div class="brand">
+        <div class="logo">∑</div>
+        <div>
+          <h1>Math Master — Class 9</h1>
+          <div class="tag small">Complete textbook-level notes • Interactive • Attractive UI</div>
+        </div>
+      </div>
+
+      <div class="top-controls">
+        <input id="searchInput" class="search" placeholder="Search topics (e.g. Pythagoras, union, mean)"/>
+        <div class="theme-btns" role="toolbar" aria-label="Theme">
+          <button class="icon-btn" data-theme="colorful" title="Colorful">🌈</button>
+          <button class="icon-btn" data-theme="professional" title="Professional">🧮</button>
+          <button class="icon-btn" data-theme="dark" title="Dark">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Quick navigation">
+      <a href="#sets">Sets</a>
+      <a href="#taxation">Taxation</a>
+      <a href="#geometry">Geometry</a>
+      <a href="#realnumbers">Real Numbers</a>
+      <a href="#algebra">Algebra</a>
+      <a href="#mensuration">Mensuration</a>
+      <a href="#trigonometry">Trigonometry</a>
+      <a href="#statistics">Statistics</a>
+      <a href="#probability">Probability</a>
+      <a href="#lineareq">Linear Eq.</a>
+    </nav>
+
+    <!-- Intro -->
+    <section class="card intro animate">
+      <div class="hero">
+        <h2>Welcome, students — Math Master Class 9</h2>
+        <p>Complete syllabus with in-depth explanations, diagrams, worked examples, and interactive quizzes. Switch themes, search topics, expand chapters, and practice with auto-graded quizzes.</p>
+        <div class="cta-row">
+          <button class="btn" id="startBtn">Start Learning</button>
+          <button class="btn ghost" id="exportBtn">Export (ZIP)</button>
+        </div>
+      </div>
+      <div style="width:260px;text-align:center">
+        <svg width="220" height="140" viewBox="0 0 220 140" aria-hidden="true">
+          <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+          <rect x="6" y="10" width="200" height="120" rx="12" fill="url(#g1)" opacity="0.12"></rect>
+          <g transform="translate(12,18)" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M6 100 Q50 20 110 60 T206 50" stroke-linecap="round"></path>
+          </g>
+          <text x="16" y="120" fill="#7c3aed" font-weight="700" font-size="18">Math • Learn • Shine</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Chapter 1: Sets -->
+    <section id="sets" class="card chapter animate" data-keywords="sets union intersection venn laws cardinality set representation">
+      <div class="chapter-header" tabindex="0" role="button" aria-expanded="true" aria-controls="sets-body">
+        <h3>1 · Sets</h3>
+        <div class="chapter-meta">Definition • Representation • Types • Operations • Laws • Cardinality • Quiz</div>
+      </div>
+      <div id="sets-body" class="chapter-body">
+        <article>
+          <h4>Definition</h4>
+          <p>A <strong>set</strong> is a well-defined collection of distinct objects called elements. Notation: <code>A = {1,2,3}</code>.</p>
+
+          <h4>Representation</h4>
+          <ol>
+            <li>Roster form: <code>{1,2,3}</code></li>
+            <li>Set-builder: <code>{x | x is even &lt; 10}</code></li>
+            <li>Venn diagrams</li>
+          </ol>
+
+          <h4>Types of sets</h4>
+          <table class="data-table">
+            <thead><tr><th>Type</th><th>Meaning</th><th>Example</th></tr></thead>
+            <tbody>
+              <tr><td>Finite</td><td>Finite elements</td><td>{1,2,3}</td></tr>
+              <tr><td>Infinite</td><td>Not finite</td><td>{1,2,3,...}</td></tr>
+              <tr><td>Empty</td><td>No elements</td><td>∅</td></tr>
+              <tr><td>Singleton</td><td>One element</td><td>{5}</td></tr>
+            </tbody>
+          </table>
+
+          <h4>Operations</h4>
+          <ul>
+            <li>Union <code>A ∪ B</code></li>
+            <li>Intersection <code>A ∩ B</code></li>
+            <li>Difference <code>A \ B</code></li>
+            <li>Complement <code>A'</code></li>
+          </ul>
+
+          <h4>Laws</h4>
+          <ul>
+            <li>Commutative, Associative, Distributive</li>
+            <li>De Morgan's laws</li>
+          </ul>
+
+          <h4>Cardinality</h4>
+          <p><code>|A|</code> denotes number of elements in A.</p>
+
+          <h4>Worked examples</h4>
+          <ol>
+            <li>U={1..10}, A={1,2,3,4}, B={3,4,5} ⇒ A∪B = {1,2,3,4,5}</li>
+            <li>If A odd <10 ⇒ A={1,3,5,7,9}, |A|=5</li>
+          </ol>
+
+          <h4>Venn diagram</h4>
+          <div class="diagram">
+            <svg class="venn" viewBox="0 0 300 140" width="300" height="140" role="img" aria-label="Venn diagram">
+              <circle cx="110" cy="70" r="52" class="c1"></circle>
+              <circle cx="190" cy="70" r="52" class="c2"></circle>
+              <text x="72" y="28" fill="#7c3aed">A</text>
+              <text x="232" y="28" fill="#06b6d4">B</text>
+              <text x="133" y="82" fill="#475569" font-weight="700">A ∩ B</text>
+            </svg>
+            <p class="small note">Hover the diagram — see interactive effect.</p>
+          </div>
+        </article>
+
+        <div class="quiz" aria-live="polite">
+          <h4>Quiz — Sets (5)</h4>
+          <form id="quiz-sets" data-chapter="sets">
+            <ol>
+              <li>Define a set and give an example.<br><input name="q1" /></li>
+              <li>What is A ∩ B if A={1,2,3} and B={3,4}?<br><input name="q2" /></li>
+              <li>State De Morgan's law for union.<br><input name="q3" /></li>
+              <li>Cardinality of {0,2,4,6,8}?<br><input name="q4" /></li>
+              <li>Give a proper subset of {a,b,c}.<br><input name="q5" /></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="sets">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="sets">Show Answers</button>
+              <div id="result-sets" class="quiz-result"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 2: Taxation -->
+    <section id="taxation" class="card chapter animate" data-keywords="taxation taxes direct indirect income gst vat principles equity">
+      <div class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="taxation-body">
+        <h3>2 · Taxation</h3>
+        <div class="chapter-meta">Definition • Importance • Types • Principles • Quiz</div>
+      </div>
+      <div id="taxation-body" class="chapter-body">
+        <article>
+          <h4>Definition</h4>
+          <p>Taxation: government collection of money for public services.</p>
+          <h4>Types</h4>
+          <table class="data-table">
+            <thead><tr><th>Tax</th><th>Direct/Indirect</th></tr></thead>
+            <tbody>
+              <tr><td>Income tax</td><td>Direct</td></tr>
+              <tr><td>GST</td><td>Indirect</td></tr>
+            </tbody>
+          </table>
+          <h4>Principles</h4>
+          <ul><li>Equity</li><li>Certainty</li><li>Convenience</li><li>Economy</li></ul>
+          <h4>Worked example</h4>
+          <p>Taxable income 250,000 @10% ⇒ tax = 25,000</p>
+        </article>
+        <div class="quiz">
+          <h4>Quiz — Taxation (5)</h4>
+          <form id="quiz-taxation" data-chapter="taxation">
+            <ol>
+              <li>Define taxation.<br><input name="q1" /></li>
+              <li>Two indirect taxes?<br><input name="q2" /></li>
+              <li>What is equity?<br><input name="q3" /></li>
+              <li>Direct vs indirect tax — one line.<br><input name="q4" /></li>
+              <li>Tax formula?<br><input name="q5" /></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="taxation">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="taxation">Show Answers</button>
+              <div id="result-taxation" class="quiz-result"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 3: Geometry -->
+    <section id="geometry" class="card chapter animate" data-keywords="geometry angles triangles congruent similar quadrilaterals circle formulas pythagoras coordinate geometry">
+      <div class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="geometry-body">
+        <h3>3 · Geometry</h3>
+        <div class="chapter-meta">Angles • Triangles • Congruency • Similarity • Quadrilaterals • Circle • Formulas • Quiz</div>
+      </div>
+      <div id="geometry-body" class="chapter-body">
+        <article>
+          <h4>Definition & Basic Concepts</h4>
+          <p>Geometry: study of points, lines, shapes. Basic terms: point, line, ray, segment, angle.</p>
+
+          <h4>Types of Angles</h4>
+          <table class="data-table">
+            <thead><tr><th>Angle</th><th>Measure</th></tr></thead>
+            <tbody>
+              <tr><td>Acute</td><td>&lt;90°</td></tr>
+              <tr><td>Right</td><td>=90°</td></tr>
+              <tr><td>Obtuse</td><td>&gt;90° &lt;180°</td></tr>
+            </tbody>
+          </table>
+
+          <h4>Triangles</h4>
+          <p>By sides: equilateral, isosceles, scalene. By angles: acute, right, obtuse. Sum = 180°.</p>
+
+          <h4>Congruency & Similarity</h4>
+          <p>Rules: SSS, SAS, ASA, RHS (congruency). Similarity: AA, SAS, SSS (sides proportional).</p>
+
+          <h4>Quadrilaterals</h4>
+          <ol>
+            <li>Square</li><li>Rectangle</li><li>Parallelogram</li>
+            <li>Rhombus</li><li>Trapezium</li><li>Kite</li>
+          </ol>
+
+          <h4>Circle</h4>
+          <p>Radius r, diameter 2r, chord, sector. Area = πr², Circumference = 2πr.</p>
+
+          <h4>Perimeter & Area formulas</h4>
+          <table class="data-table">
+            <thead><tr><th>Shape</th><th>Perimeter</th><th>Area</th></tr></thead>
+            <tbody>
+              <tr><td>Square</td><td>4a</td><td>a²</td></tr>
+              <tr><td>Rectangle</td><td>2(l+b)</td><td>l×b</td></tr>
+              <tr><td>Triangle</td><td>a+b+c</td><td>½×base×height</td></tr>
+            </tbody>
+          </table>
+
+          <h4>Pythagoras</h4>
+          <p>In right triangle: a² + b² = c² (c hypotenuse). Example: 3,4,5 triangle.</p>
+
+          <h4>Coordinate Geometry basics</h4>
+          <ul>
+            <li>Distance: √((x2-x1)² + (y2-y1)²)</li>
+            <li>Midpoint: ((x1+x2)/2, (y1+y2)/2)</li>
+            <li>Section formula...</li>
+          </ul>
+        </article>
+
+        <div class="quiz">
+          <h4>Quiz — Geometry (5)</h4>
+          <form id="quiz-geometry" data-chapter="geometry">
+            <ol>
+              <li>State Pythagoras theorem.<br><input name="q1" /></li>
+              <li>Two supplementary angles — example?<br><input name="q2" /></li>
+              <li>Name three triangle types by sides.<br><input name="q3" /></li>
+              <li>Area of a circle?<br><input name="q4" /></li>
+              <li>Distance between (0,0) and (3,4)?<br><input name="q5" /></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="geometry">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="geometry">Show Answers</button>
+              <div id="result-geometry" class="quiz-result"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 4: Real Numbers -->
+    <section id="realnumbers" class="card chapter animate" data-keywords="real numbers rational irrational surd decimal expansion">
+      <div class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="realnumbers-body">
+        <h3>4 · Real Numbers</h3>
+        <div class="chapter-meta">Rational • Irrational • Decimals • Surds • Quiz</div>
+      </div>
+      <div id="realnumbers-body" class="chapter-body">
+        <article>
+          <h4>Rational & Irrational</h4>
+          <p>Rational: p/q, q≠0. Irrational: cannot be expressed as fraction (√2, π).</p>
+
+          <h4>Decimal expansions</h4>
+          <p>Terminating vs repeating vs non-repeating (irrational).</p>
+
+          <h4>Surds</h4>
+          <p>Examples and simplification rules; rationalizing denominators.</p>
+        </article>
+
+        <div class="quiz">
+          <h4>Quiz — Real Numbers (5)</h4>
+          <form id="quiz-realnumbers" data-chapter="realnumbers">
+            <ol>
+              <li>Is √2 rational or irrational?<br><input name="q1" /></li>
+              <li>Example of repeating decimal?<br><input name="q2" /></li>
+              <li>What is a surd?<br><input name="q3" /></li>
+              <li>Convert 1/8 to decimal.<br><input name="q4" /></li>
+              <li>Is 0 rational or irrational?<br><input name="q5" /></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="realnumbers">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="realnumbers">Show Answers</button>
+              <div id="result-realnumbers" class="quiz-result"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 5: Algebra -->
+    <section id="algebra" class="card chapter animate" data-keywords="algebra expressions identities factorisation polynomial">
+      <div class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="algebra-body">
+        <h3>5 · Algebra</h3>
+        <div class="chapter-meta">Expressions • Identities • Factorisation • Quiz</div>
+      </div>
+      <div id="algebra-body" class="chapter-body">
+        <article>
+          <h4>Definition & Examples</h4>
+          <p>Variables, coefficients, monomial, binomial, polynomial. Example: 3x²+5x−2.</p>
+
+          <h4>Identities (10)</h4>
+          <ol>
+            <li>(a+b)² = a² + 2ab + b²</li>
+            <li>(a−b)² = a² − 2ab + b²</li>
+            <li>a² − b² = (a−b)(a+b)</li>
+            <li>(a+b+c)² = ...</li>
+            <li>(x+y)³ = ...</li>
+            <li>(a−b)³ = ...</li>
+            <li>a³ + b³ = (a+b)(a² − ab + b²)</li>
+            <li>a³ − b³ = (a−b)(a² + ab + b²)</li>
+            <li>(a+b)(a−b) = a² − b²</li>
+            <li>Practice expansions & factorization</li>
+          </ol>
+
+          <h4>Factorisation methods</h4>
+          <ul>
+            <li>Common factor</li>
+            <li>Grouping</li>
+            <li>Identities</li>
+          </ul>
+        </article>
+
+        <div class="quiz">
+          <h4>Quiz — Algebra (5)</h4>
+          <form id="quiz-algebra" data-chapter="algebra">
+            <ol>
+              <li>Expand (x+3)².<br><input name="q1" /></li>
+              <li>Factor x² − 9.<br><input name="q2" /></li>
+              <li>What is a coefficient?<br><input name="q3" /></li>
+              <li>Example of a trinomial?<br><input name="q4" /></li>
+              <li>Factor x³ − y³.<br><input name="q5" /></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="algebra">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="algebra">Show Answers</button>
+              <div id="result-algebra" class="quiz-result"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 6: Mensuration -->
+    <section id="mensuration" class="card chapter animate" data-keywords="mensuration plane figures solids volume lsa tsa formulas">
+      <div class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="mensuration-body">
+        <h3>6 · Mensuration</h3>
+        <div class="chapter-meta">Plane figures • Solids • Formulas • Units • Quiz</div>
+      </div>
+      <div id="mensuration-body" class="chapter-body">
+        <article>
+          <h4>Plane Figures</h4>
+          <table class="data-table">
+            <thead><tr><th>Figure</th><th>Area</th><th>Perimeter</th></tr></thead>
+            <tbody>
+              <tr><td>Square</td><td>a²</td><td>4a</td></tr>
+              <tr><td>Rectangle</td><td>l×b</td><td>2(l+b)</td></tr>
+              <tr><td>Triangle</td><td>½×b×h</td><td>a+b+c</td></tr>
+            </tbody>
+          </table>
+
+          <h4>Solids (LSA/TSA/Volume)</h4>
+          <table class="data-table">
+            <thead><tr><th>Solid</th><th>LSA</th><th>TSA</th><th>Volume</th></tr></thead>
+            <tbody>
+              <tr><td>Cube (a)</td><td>4a²</td><td>6a²</td><td>a³</td></tr>
+              <tr><td>Cylinder (r,h)</td><td>2πrh</td><td>2πr(h+r)</td><td>πr²h</td></tr>
+              <tr><td>Cone (r,l,h)</td><td>πrl</td><td>πr(l+r)</td><td>1/3 πr²h</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <div class="quiz">
+          <h4>Quiz — Mensuration (5)</h4>
+          <form id="quiz-mensuration" data-chapter="mensuration">
+            <ol>
+              <li>Volume of cylinder?<br><input name="q1" /></li>
+              <li>Area of rhombus via diagonals?<br><input name="q2" /></li>
+              <li>TSA of cube (edge a)?<br><input name="q3" /></li>
+              <li>200 cm² in m²?<br><input name="q4" /></li>
+              <li>LSA of cone?<br><input name="q5" /></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="mensuration">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="mensuration">Show Answers</button>
+              <div id="result-mensuration" class="quiz-result"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 7: Trigonometry -->
+    <section id="trigonometry" class="card chapter animate" data-keywords="trigonometry sin cos tan cosec sec cot standard values">
+      <div class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="trigonometry-body">
+        <h3>7 · Trigonometry</h3>
+        <div class="chapter-meta">Ratios • Standard values • Applications • Quiz</div>
+      </div>
+      <div id="trigonometry-body" class="chapter-body">
+        <article>
+          <h4>Six ratios</h4>
+          <table class="data-table">
+            <thead><tr><th>Ratio</th><th>Definition</th></tr></thead>
+            <tbody>
+              <tr><td>sin θ</td><td>opposite / hypotenuse</td></tr>
+              <tr><td>cos θ</td><td>adjacent / hypotenuse</td></tr>
+              <tr><td>tan θ</td><td>opposite / adjacent</td></tr>
+            </tbody>
+          </table>
+
+          <h4>Standard values</h4>
+          <p>Memorise for 0°,30°,45°,60°,90° (table included in notes).</p>
+        </article>
+
+        <div class="quiz">
+          <h4>Quiz — Trigonometry (5)</h4>
+          <form id="quiz-trigonometry" data-chapter="trigonometry">
+            <ol>
+              <li>sin θ = ?<br><input name="q1" /></li>
+              <li>tan 45° = ?<br><input name="q2" /></li>
+              <li>Reciprocal of cos θ?<br><input name="q3" /></li>
+              <li>If opp=3 and sin θ=3/5, hypotenuse?<br><input name="q4" /></li>
+              <li>One application of trig?<br><input name="q5" /></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="trigonometry">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="trigonometry">Show Answers</button>
+              <div id="result-trigonometry" class="quiz-result"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 8: Statistics -->
+    <section id="statistics" class="card chapter animate" data-keywords="statistics mean median mode data collection grouped mean median mode formulas">
+      <div class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="statistics-body">
+        <h3>8 · Statistics</h3>
+        <div class="chapter-meta">Mean • Median • Mode • Data • Collection • Quiz</div>
+      </div>
+      <div id="statistics-body" class="chapter-body">
+        <article>
+          <h4>Definition & Importance</h4>
+          <p>Statistics: collecting, analysing and interpreting data. Types: primary/secondary, qualitative/quantitative.</p>
+
+          <h4>Mean, Median, Mode</h4>
+          <p>Mean = Σx / n. Median = middle value after sorting. Mode = most frequent value(s).</p>
+
+          <h4>Grouped data</h4>
+          <p>Mean approx: Σ(f×m)/Σf where m are midpoints.</p>
+        </article>
+
+        <div class="quiz">
+          <h4>Quiz — Statistics (5)</h4>
+          <form id="quiz-statistics" data-chapter="statistics">
+            <ol>
+              <li>Define mean.<br><input name="q1" /></li>
+              <li>Median for even n — how?<br><input name="q2" /></li>
+              <li>Example where mode is not unique?<br><input name="q3" /></li>
+              <li>A data collection method?<br><input name="q4" /></li>
+              <li>Mean of 2,4,6,8,10?<br><input name="q5" /></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="statistics">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="statistics">Show Answers</button>
+              <div id="result-statistics" class="quiz-result"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 9: Probability -->
+    <section id="probability" class="card chapter animate" data-keywords="probability sample space events dice coin favourable outcomes">
+      <div class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="probability-body">
+        <h3>9 · Probability</h3>
+        <div class="chapter-meta">Basics • Sample space • Events • Examples • Quiz</div>
+      </div>
+      <div id="probability-body" class="chapter-body">
+        <article>
+          <h4>Basic idea</h4>
+          <p>Probability (for equally likely outcomes): P(E) = favourable / total.</p>
+          <h4>Examples</h4>
+          <ul><li>Coin head = 1/2</li><li>Die roll 4 = 1/6</li></ul>
+        </article>
+
+        <div class="quiz">
+          <h4>Quiz — Probability (5)</h4>
+          <form id="quiz-probability" data-chapter="probability">
+            <ol>
+              <li>Probability of head?<br><input name="q1" /></li>
+              <li>Probability of rolling 4?<br><input name="q2" /></li>
+              <li>Define sample space.<br><input name="q3" /></li>
+              <li>What is an event?<br><input name="q4" /></li>
+              <li>One revision tip?<br><input name="q5" /></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="probability">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="probability">Show Answers</button>
+              <div id="result-probability" class="quiz-result"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 10: Linear Equations -->
+    <section id="lineareq" class="card chapter animate" data-keywords="linear equations substitution elimination graphing slope intercept">
+      <div class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="lineareq-body">
+        <h3>10 · Linear Equations</h3>
+        <div class="chapter-meta">One variable • Two variables • Methods • Graphs • Quiz</div>
+      </div>
+      <div id="lineareq-body" class="chapter-body">
+        <article>
+          <h4>One variable</h4>
+          <p>ax + b = 0 ⇒ x = −b/a (a≠0)</p>
+          <h4>Two variables</h4>
+          <p>ax + by = c — solve using substitution, elimination, graphing.</p>
+          <h4>Worked example</h4>
+          <p>2x + 3 = 11 ⇒ 2x = 8 ⇒ x = 4</p>
+        </article>
+
+        <div class="quiz">
+          <h4>Quiz — Linear Equations (5)</h4>
+          <form id="quiz-lineareq" data-chapter="lineareq">
+            <ol>
+              <li>Solve 2x + 3 = 11.<br><input name="q1" /></li>
+              <li>Form of linear equation in two variables.<br><input name="q2" /></li>
+              <li>Method to solve two equations?<br><input name="q3" /></li>
+              <li>In y = mx + c, what is m?<br><input name="q4" /></li>
+              <li>One tip to check solutions?<br><input name="q5" /></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="lineareq">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="lineareq">Show Answers</button>
+              <div id="result-lineareq" class="quiz-result"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing utilities -->
+    <section class="card animate">
+      <h3>Next steps</h3>
+      <p>Use the Export button to package files, or tell me to split into separate chapter pages / add printable PDFs / add answer keys / add animations per diagram. Quiz progress is saved locally.</p>
+      <div class="small-cta">
+        <button class="btn" id="exportZip">Export ZIP</button>
+        <button class="btn ghost" id="splitPages">Split into pages</button>
+        <button class="btn ghost" id="clearProgress">Clear saved progress</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      Made by Aachal • Class 9 Math — Complete Syllabus
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
